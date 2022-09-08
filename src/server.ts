@@ -23,6 +23,8 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   });
 });
 
-app.listen(3333, () => {
-  console.log('🚀​​ Server started on port 3333!');
+const PORT = 3003;
+
+app.listen(PORT, () => {
+  console.log(`🚀​​ Server started on port ${PORT}!`);
 });

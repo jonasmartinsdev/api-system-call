@@ -7,6 +7,7 @@ const express_1 = __importDefault(require("express"));
 require("express-async-errors");
 const cors_1 = __importDefault(require("cors"));
 const routes_1 = __importDefault(require("./routes"));
+require("dotenv/config");
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
@@ -24,6 +25,7 @@ app.use((err, req, res, next) => {
         message: 'Internal server error.',
     });
 });
-app.listen(3333, () => {
-    console.log('🚀​​ Server started on port 3333!');
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () => {
+    console.log(`🚀​​ Server started on port ${PORT}!`);
 });

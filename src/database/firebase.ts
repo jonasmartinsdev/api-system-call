@@ -4,12 +4,12 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API,
-  authDomain: process.env.FIREBASE_DOMAIN,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE,
-  messagingSenderId: process.env.FIREBASE_MESSAGING,
-  appId: process.env.FIREBASE_APP,
+  apiKey: 'AIzaSyAWlID7Mv5cts5WoZNOzLz6Mxrx6jT3zSM',
+  authDomain: 'call-system-c9c6c.firebaseapp.com',
+  projectId: 'call-system-c9c6c',
+  storageBucket: 'call-system-c9c6c.appspot.com',
+  messagingSenderId: '1024362042014',
+  appId: '1:1024362042014:web:6876a0d3981cdd6dad218f',
 };
 
 if (!firebase.apps.length) {
